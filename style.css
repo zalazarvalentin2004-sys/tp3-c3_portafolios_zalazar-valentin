@@ -75,7 +75,7 @@ video{
     border-bottom: rgb(209, 209, 209) solid 5px;
     padding: 10px 0;
 }
-section > div{
+.section_2 > div{
     display: flex;
     width: 65%;
 }
@@ -89,13 +89,17 @@ section > div{
     margin-top: 20px;
 }
 .section_2 li{
+    font-family: "labrada-bold" serif;
+    font-size: 16px;
     list-style: none;
     color: rgb(209, 209, 209);
     border: rgb(209, 209, 209) solid 5px;
-    padding: 20px;
+    padding: 15px;
     margin: 10px 10px 0 0;
 }
 .section_2 h2{
+    font-family: "labrada-bold" serif;
+    font-size: 25px;
     color: rgb(209, 209, 209);
     width: 65%;
     border-bottom: rgb(209, 209, 209) solid 5px;
@@ -121,6 +125,8 @@ section > div{
     align-items: center;
 }
 .section_3 h2{
+    font-family: "labrada-bold" serif;
+    font-size: 25px;
     color: #252525;
     width: 65%;
     border-bottom: #252525 solid 5px;
@@ -130,6 +136,7 @@ section > div{
 .section_3 div{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .section_3 img{
     height: 340px;
@@ -167,9 +174,17 @@ footer img{
 }
 footer li{
     list-style: none;
-    color: rgb(209, 209, 209);
     margin-right: 20px;
 }
 footer h4{
     color: rgb(209, 209, 209);
+    font-family: "labrada-bold" serif;
+    font-size: 14px;
+}
+
+footer a{
+    font-family: "labrada-bold" serif;
+    font-size: 14px;
+    color: rgb(209, 209, 209);
+    text-decoration: none;
 }
