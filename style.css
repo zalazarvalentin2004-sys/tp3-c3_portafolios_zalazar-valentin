@@ -32,7 +32,7 @@ nav ul{
 nav a{
     color: rgb(209, 209, 209);
     text-decoration: none;
-    font-family: "labrada-bold" serif;
+    font-family: "labrada-bold", serif;
     font-size: 16px;
 }
 nav a:hover{
@@ -70,7 +70,7 @@ video{
 }
 .section_2 p{
     color: rgb(209, 209, 209);
-    font-family: "labrada-bold" serif;
+    font-family: "labrada-bold", serif;
     font-size: 25px;
     font-weight: 900;
     display: block;
@@ -91,7 +91,7 @@ video{
     margin-top: 20px;
 }
 .section_2 li{
-    font-family: "labrada-bold" serif;
+    font-family: "labrada-bold", serif;
     font-size: 16px;
     list-style: none;
     color: rgb(209, 209, 209);
@@ -127,7 +127,7 @@ video{
     align-items: center;
 }
 .section_3 h2{
-    font-family: "labrada-bold" serif;
+    font-family: "labrada-bold", serif;
     font-size: 25px;
     color: #252525;
     width: 65%;
@@ -180,7 +180,7 @@ footer li{
 }
 footer h4{
     color: rgb(209, 209, 209);
-    font-family: "labrada-bold" serif;
+    font-family: "labrada-bold", serif;
     font-size: 14px;
 }
 
@@ -209,7 +209,7 @@ form{
     border-radius: 10px;
 }
 label{
-    font-family: "labrada-bold";
+    font-family: "labrada-bold", serif;
     color: rgb(209, 209, 209);
     margin-bottom: 6px;
 }
@@ -236,7 +236,7 @@ textarea{
 }
 form p{
     color: rgb(209, 209, 209);
-    font-family: "labrada-bold";
+    font-family: "labrada-bold", serif;
     font-size: 20px;
     margin-bottom: 20px;
 }
