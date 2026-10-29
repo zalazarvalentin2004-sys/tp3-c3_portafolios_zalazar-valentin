@@ -23,14 +23,24 @@
         <form method="post" action="mailto:jorgito@gmail.com" target="_blank" enctype="text/plain">
             <p>Te invito a que trabajemos juntos en tu siguiente proyecto. Pero primero complete el siguiente formulario.</p>
             <label for="name">Nombre y Apellido</label>
-            <input type="text" name="name" id="name" minlength="3" placeholder="Gerardo Caminos">
+            <input class="input" type="text" name="name" id="name" minlength="3" placeholder="Gerardo Caminos">
             <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" placeholder="Ger2004@gmail.com">
+            <input class="input" type="email" name="email" id="email" placeholder="Ger2004@gmail.com">
             <label for="email">Telefono</label>
-            <input type="tel" name="tel" id="tel" placeholder="+54 123 1234-1234">
+            <input class="input" type="tel" name="tel" id="tel" placeholder="+54 123 1234-1234">
+            <label for="service">Servicio</label>
+            <select class="input" name="service" id="service">
+                <option value="">Diseño de Identidad Completa</option>
+                <option value="">Diseño Editorial</option>
+                <option value="">Diseño de Señaletica</option>
+                <option value="">Diseño Web</option>
+                <option value="">Diseño de Packaging</option>
+                <option value="">Diseño de Tipografia(Display)</option>
+                <option value="">Otro</option>
+            </select>
             <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" placeholder="..."></textarea>
-            <input type="submit" value="Enviar" required>
+            <textarea class="input" name="mensaje" id="mensaje" placeholder="..."></textarea>
+            <input class="input" type="submit" value="Enviar" required>
         </form>
     </main>
     <footer>

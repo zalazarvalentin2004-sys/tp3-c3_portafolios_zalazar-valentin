@@ -205,34 +205,35 @@ form{
     background: #252525;
     padding: 20px;
     width: 65vw;
-    margin-top: 40px;
+    margin: 50px 0;
+    border-radius: 10px;
 }
 label{
     font-family: "labrada-bold";
     color: rgb(209, 209, 209);
     margin-bottom: 6px;
 }
-input{
+.input{
     background: #333;
     padding: 10px;
     margin: 0 0 20px 0;
     border: none;
     border-bottom: #FF9500 solid 5px;
 }
-textarea{
-    background: #333;
-    padding: 10px;
-    margin: 0 0 20px 0;
-    border: none;
+option{
+    background: #FF9500;
 }
-input[type=submit]{
+textarea{
+    min-height: 200px;
+    max-height: 300px;
+}
+.input[type=submit]{
     color: rgb(209, 209, 209);
     background: #FF9500;
     padding: 10px;
     margin: 0 0 20px 0;
     border: none;
 }
-
 form p{
     color: rgb(209, 209, 209);
     font-family: "labrada-bold";
