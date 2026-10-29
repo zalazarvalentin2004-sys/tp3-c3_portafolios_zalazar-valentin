@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*----------index----------*/
 /*Header*/
 header{
     background: #252525;
@@ -139,7 +140,7 @@ video{
     flex-wrap: wrap;
     justify-content: center;
 }
-.section_3 img{
+.section_3 .img{
     height: 340px;
     margin: 10px;
 }
@@ -188,4 +189,53 @@ footer a{
     font-size: 14px;
     color: rgb(209, 209, 209);
     text-decoration: none;
+}
+/*----------galery----------*/
+/*----------form----------*/
+.form-main{
+    background: linear-gradient(#FF9500, #FFF700);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background: #252525;
+    padding: 20px;
+    width: 65vw;
+    margin-top: 40px;
+}
+label{
+    font-family: "labrada-bold";
+    color: rgb(209, 209, 209);
+    margin-bottom: 6px;
+}
+input{
+    background: #333;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border: none;
+    border-bottom: #FF9500 solid 5px;
+}
+textarea{
+    background: #333;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border: none;
+}
+input[type=submit]{
+    color: rgb(209, 209, 209);
+    background: #FF9500;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border: none;
+}
+
+form p{
+    color: rgb(209, 209, 209);
+    font-family: "labrada-bold";
+    font-size: 20px;
+    margin-bottom: 20px;
 }

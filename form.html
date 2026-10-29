@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentin Zalazar</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo" type="image/png" class="logo" height="60px" width="36px"></a>
+            <ul>
+                <li><a href="galery.html">TRABAJOS</a></li>
+                <li>|</li>
+                <li><a href="form.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form-main">
+        <form method="post" action="mailto:jorgito@gmail.com" target="_blank" enctype="text/plain">
+            <p>Te invito a que trabajemos juntos en tu siguiente proyecto. Pero primero complete el siguiente formulario.</p>
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" name="name" id="name" minlength="3" placeholder="Gerardo Caminos">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" placeholder="Ger2004@gmail.com">
+            <label for="email">Telefono</label>
+            <input type="tel" name="tel" id="tel" placeholder="+54 123 1234-1234">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" placeholder="..."></textarea>
+            <input type="submit" value="Enviar" required>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#"><img src="img/insta.png" alt="" height="30px" width="29px">INSTAGRAM</a></li>
+            <li><a href="#"><img src="img/be.png" alt="" height="30px" width="46px">BEHANCE</a></li>
+            <li><a href="#"><img src="img/mail.png" alt="" height="30px" width="42px">E-MAIL</a></li>
+        </ul>
+        <h4>©2026 Hecho en Argentina</h4>
+    </footer>
 </body>
+
 </html>
