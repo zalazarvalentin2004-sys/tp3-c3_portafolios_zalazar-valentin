@@ -4,6 +4,12 @@
     font-weight: bolder;
     font-style: normal;
 }
+@font-face {
+    font-family: "labrada-bolditalic";
+    src: url("fonts/Labrada-BoldItalic.ttf") format("truetype");
+    font-weight: bolder;
+    font-style: italic;
+}
 *{
     margin: 0;
     padding: 0;
@@ -203,10 +209,22 @@ footer a{
 /*----------galery_zoom----------*/
 .zoom-galery{
     background: rgb(209, 209, 209);
-    padding: 20px 0 ;
+    padding: 30px 0 ;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.zoom-galery h2{
+    font-family: "labrada-bold",serif;
+    color: #252525;
+    font-size: 30px;
+    line-height: 20px;
+}
+.zoom-galery h3{
+    font-family: "labrada-bolditalic";
+    color: #252525;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 /*----------form----------*/
 .form-main{
@@ -227,10 +245,14 @@ form{
 }
 label{
     font-family: "labrada-bold", serif;
+    font-size: 18px;
     color: rgb(209, 209, 209);
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 .input{
+    color: rgb(209, 209, 209);
+    font-family: "labrada-bold", serif;
+    font-size: 15px;
     background: #333;
     padding: 10px;
     margin: 0 0 20px 0;
@@ -245,11 +267,24 @@ textarea{
     max-height: 300px;
 }
 .input[type=submit]{
-    color: rgb(209, 209, 209);
+    color: #252525;
     background: #FF9500;
     padding: 10px;
     margin: 0 0 20px 0;
     border: none;
+}
+.input[type=submit]:hover{
+    background: #FFF700;
+}
+.input::placeholder{
+    color: rgb(209, 209, 209);
+    font-family: "labrada-bold", serif;
+    font-size: 15px;
+}
+option{
+    color: #252525;
+    font-family: "labrada-bold", serif;
+    font-size: 15px;
 }
 form p{
     color: rgb(209, 209, 209);
@@ -257,6 +292,9 @@ form p{
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
+    border-bottom: #FF9500 solid 5px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
 }
 @media screen and (max-width: 1200px){
     .article__container{
@@ -266,7 +304,9 @@ form p{
     .article__info p{
         margin-top: 10px;
     }
-    
+    form{
+        width: 80vw;
+    }
 }
 @media screen and (max-width: 600px){
     video{
