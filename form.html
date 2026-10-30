@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentin Zalazar</title>
+    <title>Zalazar Valentin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,15 +13,18 @@
         <nav>
             <a href="index.html"><img src="img/logo.png" alt="logo" type="image/png" class="logo" height="60" width="36"></a>
             <ul>
-                <li><a href="galery.html">TRABAJOS</a></li>
-                <li>|</li>
-                <li><a href="form.html">CONTACTO</a></li>
+                <li><a href="galery.html" class="nav__item">TRABAJOS</a></li>
+                <li class="nav__item">|</li>
+                <li><a href="form.html" class="nav__item">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <main class="form-main">
         <form method="post" action="mailto:jorgito@gmail.com" target="_blank" enctype="text/plain">
-            <p>Te invito a que trabajemos juntos en tu siguiente proyecto. Pero primero complete el siguiente formulario.</p>
+            <p>
+                Te invito a que trabajemos juntos en tu siguiente proyecto.<br>
+                Pero primero complete el siguiente formulario.
+            </p>
             <label for="name">Nombre y Apellido</label>
             <input class="input" type="text" name="name" id="name" minlength="3" placeholder="Gerardo Caminos">
             <label for="email">E-Mail</label>

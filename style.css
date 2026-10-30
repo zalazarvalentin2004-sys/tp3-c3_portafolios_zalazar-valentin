@@ -4,11 +4,12 @@
     font-weight: bolder;
     font-style: normal;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 /*----------index----------*/
 /*Header*/
@@ -20,30 +21,22 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-nav li{
-    list-style: none;
-    margin-left: 15px;
-    color: rgb(209, 209, 209);
-}
 nav ul{
     display:flex;
     align-items: center;
 }
-nav a{
+.nav__item{
+    margin-left: 15px;
     color: rgb(209, 209, 209);
-    text-decoration: none;
     font-family: "labrada-bold", serif;
     font-size: 16px;
 }
 nav a:hover{
     color: #FF9500;
 }
-.logo{
-    height: 60px;
-}
 /*main*/
 /*section_1*/
-.section_1{
+.front{
     background: linear-gradient(#FF9500, #FFF700);
     height: 100vh;
     display: flex;
@@ -54,7 +47,7 @@ video{
     justify-content: center;
 }
 /*section_2*/
-.section_2{
+article{
     background: #333;
     min-height: 100vh;
     padding: 50px;
@@ -62,51 +55,50 @@ video{
     flex-direction: column;
     align-items: center;
 }
+.article__container{
+    display: flex;
+    align-items: end;
+    width: 65%;
+}
 .foto{
-    height: 440px;
+    height: 425px;
     width: auto;
     margin-right: 20px;
     object-fit: cover;
 }
-.section_2 p{
-    color: rgb(209, 209, 209);
-    font-family: "labrada-bold", serif;
-    font-size: 25px;
-    font-weight: 900;
-    display: block;
-    border-bottom: rgb(209, 209, 209) solid 5px;
-    padding: 10px 0;
-}
-.section_2 > div{
-    display: flex;
-    width: 65%;
-}
-.info{
+.article__info{
     display: flex;
     flex-direction: column;
 }
-.section_2 ul{
+.article__info p{
+    color: rgb(209, 209, 209);
+    font-family: "labrada-bold", serif;
+    line-height: 33px;
+    font-size: 25px;
+    border-bottom: rgb(209, 209, 209) solid 5px;
+    padding-bottom: 18px;
+}
+article ul{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 18px;
 }
-.section_2 li{
+article li{
     font-family: "labrada-bold", serif;
-    font-size: 16px;
-    list-style: none;
+    font-size: 15px;
     color: rgb(209, 209, 209);
     border: rgb(209, 209, 209) solid 5px;
-    padding: 15px;
-    margin: 10px 10px 0 0;
+    padding: 13px;
+    margin: 15px 15px 0 0;
 }
-.section_2 h2{
+article h2{
     font-family: "labrada-bold" serif;
     font-size: 25px;
     color: rgb(209, 209, 209);
     width: 65%;
     border-bottom: rgb(209, 209, 209) solid 5px;
     text-align: center;
-    margin: 40px 0 0 0;
+    margin-top: 40px;
 }
 .sofwares{
     display: flex;
@@ -119,14 +111,14 @@ video{
     margin: 10px;
 }
 /*section 3*/
-.section_3{
+.works{
     background: rgb(209, 209, 209);
     padding: 20px 0 ;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section_3 h2{
+.works h2{
     font-family: "labrada-bold", serif;
     font-size: 25px;
     color: #252525;
@@ -135,16 +127,16 @@ video{
     text-align: center;
     margin-bottom: 20px;
 }
-.section_3 div{
+.works div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.section_3 .img{
+.works img{
     height: 340px;
     margin: 10px;
 }
-.section_3 a{
+.works__more{
     background: #252525;
     color: #FF9500;
     height: 340px;
@@ -153,7 +145,10 @@ video{
     text-align: center;
     line-height: 350px;
     margin: 10px;
-    text-decoration: none;
+}
+.works__more:hover{
+    background: #FF9500;
+    color: #252525;
 }
 /*footer*/
 footer{
@@ -175,7 +170,6 @@ footer img{
     margin-right: 10px;
 }
 footer li{
-    list-style: none;
     margin-right: 20px;
 }
 footer h4{
@@ -188,9 +182,23 @@ footer a{
     font-family: "labrada-bold" serif;
     font-size: 14px;
     color: rgb(209, 209, 209);
-    text-decoration: none;
 }
 /*----------galery----------*/
+.galery-main{
+    background: rgb(209, 209, 209);
+    padding: 20px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*----------galery_zoom----------*/
+.zoom-galery{
+    background: rgb(209, 209, 209);
+    padding: 20px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*----------form----------*/
 .form-main{
     background: linear-gradient(#FF9500, #FFF700);
@@ -203,7 +211,7 @@ form{
     display: flex;
     flex-direction: column;
     background: #252525;
-    padding: 20px;
+    padding: 40px;
     width: 65vw;
     margin: 50px 0;
     border-radius: 10px;
@@ -239,4 +247,5 @@ form p{
     font-family: "labrada-bold", serif;
     font-size: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
