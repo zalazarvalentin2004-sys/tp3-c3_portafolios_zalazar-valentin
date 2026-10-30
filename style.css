@@ -63,7 +63,7 @@ article{
 }
 .article__container{
     display: flex;
-    align-items: end;
+    align-items: start;
     width: 65%;
 }
 .foto{
@@ -160,6 +160,7 @@ article h2{
 footer{
     background: #252525;
     display: flex;
+    flex-direction: column;
     padding: 20px;
     align-items: center;
     justify-content: center;
@@ -168,7 +169,7 @@ footer ul{
     display: flex;
     border: rgb(209, 209, 209) solid 5px;
     padding: 20px;
-    margin-right: 10px;
+    margin-bottom: 10px;
     align-items: center;
 }
 footer img{
@@ -193,8 +194,10 @@ footer a{
 .galery-main{
     background: rgb(209, 209, 209);
     padding: 20px 0 ;
+}
+.galery-main div{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 /*----------galery_zoom----------*/
@@ -254,4 +257,38 @@ form p{
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
+}
+@media screen and (max-width: 1200px){
+    .article__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .article__info p{
+        margin-top: 10px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    video{
+        width: 400px;
+    }
+    .article__container{
+        width: 80%;
+    }
+    .article__info p{
+        font-size: 18px;
+    }
+    .foto{
+        width: 230px;
+        height: auto;
+    }
+    article ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+    }
+    footer img{
+        height: 25px;
+        width: auto;
+    }
 }
